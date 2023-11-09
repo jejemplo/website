@@ -43,6 +43,21 @@ div#q1 {
 .translucent {
     opacity: 0.4;
 }
+div#q4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: purplebox;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes purplebox {
+    0% { background-color: purple; left: 0; top: 0; }
+    25% { background-color: grey; left: 200px; top: 0; }
+    50% { background-color: purple; left: 400px; top: 0; }
+    75% { background-color: black; left: 200px; top: 0; }
+    100% { background-color: black; left: 0; top: 0; }
+}
 div#q5 {
     margin: 40px;
     padding: 40px;
@@ -98,10 +113,9 @@ applied to:
 </p>
 </section>
 
-<section>
-<h2>Question 4: </h2>
-<p>
-</p>
+<section id="q4">
+<h2>Question 4: CSS3 Animation</h2>
+<div></div>
 </section>
 
 <section>
