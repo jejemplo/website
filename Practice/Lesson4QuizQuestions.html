@@ -7,6 +7,9 @@
 body {
     margin: 2vw;
 }
+a, a:visited {
+    text-decoration: none
+}
 section {
     margin: 2vw 2vw 2vw 4vw;
 }
@@ -42,6 +45,21 @@ div#q1 {
 }
 .translucent {
     opacity: 0.4;
+}
+section#q3 {
+    height: 535px;
+}
+section#q3>div {
+    position: relative;
+    display: inline;
+}
+section#q3>h2 {
+    margin-bottom: 35px;
+}
+section#q3>div>img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 div#q4 {
     width: 100px;
@@ -89,7 +107,7 @@ window.onload = init;
 
 <main>
 <section>
-<h2>Question 1: opacity</h2>
+<h2>Question 1: Opacity</h2>
 <div id="q1" class="translucent">
 <pre>
 div#q1 {
@@ -108,9 +126,20 @@ applied to:
 </section>
 
 <section>
-<h2>Question 3: </h2>
+<h2>Question 2: Get SASS!</h2>
 <p>
+
 </p>
+</section>
+</main>
+
+
+<section id="q3">
+<h2>Question 3: Stacked Images Using Z-Index</h2>
+<div>
+<img src="images/SmallerYellowBox.png" alt="Smaller Yellow Box">
+<img src="images/BigPurpleBox.png" alt="Big Purple Box" style="z-index: -1;">
+</div>
 </section>
 
 <section>
@@ -119,10 +148,27 @@ applied to:
 </section>
 
 <section>
-<h2>Question 5: </h2>
+<h2>Question 5: Outline-Offset</h2>
 <div id="q5">
 ACC Rocks!
 </div>
+</section>
+
+<section>
+<h2>Question 6: What Are UI Elements?</h2>
+<p>
+This question was about user interface (UI) elements.  Rather than example
+code here, I'll provide a link to an article titled
+<a href="https://www.usability.gov/how-to-and-tools/methods/user-interface-elements.html">
+User Interface Elements</a> on the
+<a href="https://www.usability.gov/">usability.gov</a> website.
+</p>
+</section>
+
+<section>
+<h2>Question 7: </h2>
+<p>
+</p>
 </section>
 </main>
 
