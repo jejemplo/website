@@ -1,0 +1,22 @@
+body {
+  margin: 4vw;
+}
+h1 {
+  text-align: center;
+  color: orange;
+}
+a, a:visited {
+  color: tomato;
+  text-decoration: none;
+}
+main {
+  display: grid;
+  grid-template-columns: 48vw 48vw;
+  grid-template-rows: auto;
+  padding: 4vw;
+  border: 1px dotted #777;
+}
+footer {
+  text-align: center;
+  margin-top: 1vw;
+}
