@@ -11,7 +11,7 @@ a, a:visited {
 }
 main {
   display: grid;
-  grid-template-columns: 46vw 46vw;
+  grid-template-columns: 42vw 42vw;
   grid-template-rows: auto;
   column-gap: 4vw;
   padding: 2vw;
