@@ -11,9 +11,10 @@ a, a:visited {
 }
 main {
   display: grid;
-  grid-template-columns: 48vw 48vw;
+  grid-template-columns: 46vw 46vw;
   grid-template-rows: auto;
-  padding: 4vw;
+  column-gap: 4vw;
+  padding: 2vw;
   border: 1px dotted #777;
 }
 footer {
