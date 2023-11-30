@@ -6,6 +6,9 @@
 <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 <style>
 @import url(../css/jejemplo.css);
+pre {
+    margin-left: 40px;
+}
 </style>
 <script src="../js/setlinks.js"></script>
 <script>
@@ -20,6 +23,28 @@ window.onload = init;
 <section>
 <h2>The <code>alert()</code> function</h2>
 <div>
+<p>
+The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert">
+alert(message)</a> method opens a pop-up dialog with <code>message</code>
+displayed and waits for the user to dismiss the pop-up window.
+</p><p>
+The following script:
+</p><pre>
+let temp = 32.6;
+let beanCounter = 4;
+let reallyCool = true;
+let motto = "I Rule";
+temp = (temp - 32) * 5 / 9;
+motto += " and so do you!";
+let pos = Math.random();
+// Now let's see what we've got
+alert("temp is: " + temp);
+alert("motto is: " + motto);
+alert("And pos is: " + pos);
+</pre><p>
+Will pop-up three (<i>really annoying</i>) messages, one after the other. To
+avoid the annoyance, the alert lines have been commented out in the source.
+</p>
 </div>
 </section>
 
@@ -45,7 +70,11 @@ let motto = "I Rule";
 temp = (temp - 32) * 5 / 9;
 motto += " and so do you!";
 let pos = Math.random();
-// Now let's see what we've got
+/*  
+alert("temp is: " + temp);
+alert("motto is: " + motto);
+alert("And pos is: " + pos);
+*/
 console.log("temp is: " + temp + " and motto is: " + motto);
 console.log("And pos is: " + pos);
 </script>
