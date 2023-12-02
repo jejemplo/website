@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Learning JS: Hello ... Bob!</title>
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<style>
+@import url(../css/jejemplo.css);
+pre {
+    margin-left: 40px;
+}
+</style>
+<script src="../js/setlinks.js"></script>
+<script>
+window.onload = init;
+</script>
+
+</head>
+<body>
+<h1>Hello <span id="name"></span>! </h1>
+
+<section>
+<h2>The <code>prompt()</code> method</h2>
+<div>
+<p>
+The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt">
+prompt(message)</a> method opens a pop-up dialog with <code>message</code>
+displayed and waits for the user to enter information into the text field of
+the pop-up window.
+</p><p>
+By adding a <code>&lt;span&gt;</code> element to the heading like this:
+</p><pre>
+&lt;h1&gt;Hello &lt;span id="name"&gt;&lt;/span&gt;! &lt;/h1&gt;
+</pre><p>
+And then putting the following little two line script at the bottom script:
+</p><pre>
+let userName = prompt("What's your name? ");
+document.getElementById("name").innerHTML = userName;
+</pre><p>
+The will ask (prompt) the user for their name, and then put a personalized
+hello message to them in the heading.
+</p>
+</div>
+</section>
+</div>
+</section>
+
+<footer>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> | 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer> 
+
+<script>
+let userName = prompt("What's your name? ");
+document.getElementById("name").innerHTML = userName;
+</script>
+</body>
+</html>
