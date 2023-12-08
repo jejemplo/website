@@ -3,11 +3,18 @@
 <head>
 <meta charset="utf-8">
 <title>Webville Tunes</title>
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 <style>
 @import url(../css/jejemplo.css);
 </style>
-<script src="js/setlinks.js"></script>
+<script src="setlinks.js"></script>
+<script src="playlist.js"></script>
 <script>
+function init() {
+  setValidationLinks();
+  setUpButtonHandler();    
+}
+
 window.onload = init;
 </script>
 
