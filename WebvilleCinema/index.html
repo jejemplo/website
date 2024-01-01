@@ -5,10 +5,10 @@
 <title>Webville Cinema</title>
 <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 <style>
-@import url(../css/jejemplo.css);
+@import url(css/style.css);
 </style>
-<script src="setlinks.js"></script>
-<script src="showtimes.js"></script>
+<script src="js/setlinks.js"></script>
+<script src="js/showtimes.js"></script>
 <script>
 function init() {
   setValidationLinks();
@@ -23,15 +23,17 @@ window.onload = init;
 <h1>Webville Cinema</h1>
 
 <main>
-<ul id="nowplaying">
-</ul>
+<h2>NOW PLAYING</h2>
+<table id="nowPlaying">
+</table>
 </main>
 
 <footer>
 <a id="vLink1">
 <strong> HTML </strong> Valid! </a> | 
 <a id="vLink2">
-<strong> CSS </strong> Valid! </a>
+<strong> CSS </strong> Valid! </a> |
+<a href="../index.html">Homepage</a>
 </footer> 
 
 </body>

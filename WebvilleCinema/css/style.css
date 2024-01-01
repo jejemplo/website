@@ -1,0 +1,37 @@
+body {
+  margin: 4vw;
+}
+h1 {
+  text-align: center;
+  color: orange;
+  font-size: 3vw;
+}
+h2 {
+  text-align: center;
+  font-size: 2.6vw;
+}
+a, a:visited {
+  color: tomato;
+  text-decoration: none;
+}
+main {
+  padding: 2vw;
+  border: 1px dotted #777;
+}
+table {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+th {
+  font-size: 2vw;
+  padding: 0.4vw;
+}
+td {
+  font-size: 1.8vw;
+  padding: 0.4vw;
+}
+footer {
+  text-align: center;
+  margin-top: 1vw;
+}
