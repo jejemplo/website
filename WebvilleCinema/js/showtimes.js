@@ -3,19 +3,25 @@ movies = [
     title: "Plan 9 from Outer Space",
     genre: "Cult Classic",
     rating: 5,
-    showtimes: ["3:00pm", "7:00pm", "11:00pm"]
+    showtimes: ["12:00pm", "3:00pm", "7:00pm", "11:00pm"]
   },
   {
     title: "Forbidden Planet",
     genre: "Classic Sci-fi",
     rating: 5,
-    showtimes: ["5:00pm", "9:00pm"]
+    showtimes: ["10:00am", "5:00pm", "9:00pm"]
   },
   {
     title: "Buckaroo Banzai",
     genre: "Cult Classic",
     rating: 5,
-    showtimes: ["1:00pm", "5:00pm", "7:00pm"]
+    showtimes: ["11:00am", "1:00pm", "5:00pm", "7:00pm"]
+  },
+  {
+    title: "Office Space",
+    genre: "Cult Classic",
+    rating: 5,
+    showtimes: ["9:00am", "2:00pm", "5:00pm", "10:00pm"]
   }
 ];
 
