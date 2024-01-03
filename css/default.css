@@ -1,0 +1,19 @@
+body {
+  margin: 4vw;
+}
+h1 {
+  text-align: center;
+  color: orange;
+}
+a, a:visited {
+  color: tomato;
+  text-decoration: none;
+}
+main {
+  padding: 2vw;
+  border: 1px dotted #777;
+}
+footer {
+  text-align: center;
+  margin-top: 1vw;
+}

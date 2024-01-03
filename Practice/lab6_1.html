@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lab 6-1</title>
+<style> 
+@import url(../css/default.css);
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+
+window.onload = init;
+</script>
+<script>
+function vote() {
+  var t = "Your favorite pizza topping is: ";
+  for (i = 0; i < document.myform.toppings.length; i++) {
+    if (document.myform.toppings[i].checked == true) {
+      t = t + document.myform.toppings[i].value;
+    }
+  }
+  if (t == "Your favorite pizza topping is: ") {
+    document.getElementById("txt").value = "Choose a topping";
+  } else {
+    document.getElementById("txt").value = t;
+    document.getElementById("txt1").value = t;
+    document.getElementById("txt2").value = t;
+  }
+}
+
+function upperCase() {
+  var x = document.getElementById("txt").value;
+  document.getElementById("txt").value = x.toUpperCase();
+}
+
+function SayHello() {
+  alert("Your mouse is over the text!");
+}
+
+function SayGoodbye() {
+  alert("Your mouse has left the text!");
+}
+</script>
+</head>
+
+<body>
+<h1>CIW Advanced HTML5 and CSS3 Specialist: Lab 6-1</h1>
+
+<main>
+<h2>Event Handler Examples</h2>
+
+<h3>Vote for your favorite pizza topping:</h3>
+<form name="myform">
+<p>
+<input type="radio" name="toppings" value="mushrooms">mushrooms<br>
+<input type="radio" name="toppings" value="pepperoni">pepperoni<br>
+<input type="radio" name="toppings" value="green peppers">green peppers<br>
+<input type="radio" name="toppings" value="anchovies">anchovies<br>
+<input type="radio" name="toppings" value="pinapple">pinapple<br>
+<input type="radio" name="toppings" value="sausage">sausage<br>
+<input type="radio" name="toppings" value="onions">onions<br>
+</p><p>
+<input type="button" value="VOTE" onclick="vote()">
+<input type="reset" value="RESET">
+</p><p>
+<input type="text" id="txt" size="40" onblur="upperCase()"> Click in then out!
+</p><p>
+<input type="text" id="txt1" size="40" onmouseover="SayHello()"> Hover over
+this field!
+</p><p>
+<input type="text" id="txt2" size="40" onmouseout="SayGoodbye()"> Hover this
+field then away!
+</p>
+</form>
+</main>
+ 
+<footer>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> | 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer> 
+
+</body>
+</html>
