@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lab 6-2</title>
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<style> 
+@import url(../css/default.css);
+</style>
+<script src="js/validation.js"></script>
+<script src="js/lab6_2.js"></script>
+<script>
+function init() {
+  set_validation_buttons();
+}
+
+window.onload = init;
+</script>
+</head>
+
+<body>
+<h1>CIW Advanced HTML5 and CSS3 Specialist: Lab 6-2</h1>
+
+<main>
+<h2>Calling Functions and Using Arguments</h2>
+
+<h3>JavaScript Get or Set Checked Radio Value</h3>
+<form name="radioExampleForm" method="get" action="" onsubmit="return false;">
+<p>
+<label for="number0"><input type="radio" value="0" name="number"> Zero</label>
+<label for="number1"><input type="radio" value="1" name="number"> One</label> 
+<label for="number2"><input type="radio" value="2" name="number"> Two</label> 
+<label for="number3"><input type="radio" value="3" name="number"> Three</label> 
+<label for="number4"><input type="radio" value="4" name="number"> Four</label>
+</p><p>
+<input type="button" onclick="console.log(
+  'Checked value is: ' +
+  getCheckedValue(document.forms['radioExampleForm'].elements['number'])
+);" value="Show Checked Value">
+
+<input type="button"
+onclick="setCheckedValue(
+  document.forms['radioExampleForm'].elements['number'], '2'
+);" value="Set Checked to Two"> 
+
+<input type="button" onclick="setCheckedValue(
+  document.forms['radioExampleForm'].elements['number'], '4'
+);" value="Set Checked to Four"> 
+
+<input type="button" onclick="setCheckedValue(
+  document.forms['radioExampleForm'].elements['number'], ''
+);" value="Uncheck All">
+</p>
+</form>
+</main>
+ 
+<footer>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> | 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer> 
+
+</body>
+</html>
