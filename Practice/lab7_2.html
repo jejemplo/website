@@ -9,7 +9,10 @@
 </style>
 <script src="js/validation.js"></script>
 <script>
+let loc;
+
 function getLocation() {
+  console.log("inside call to getLocation(), loc is now: " + loc);
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
   } else {
@@ -38,7 +41,7 @@ function showError(error) {
   }
 }
 function init() {
-  var loc = document.getElementById("test");
+  loc = document.getElementById("test");
   console.log("loc is: " + loc);
   set_validation_buttons();
 }
