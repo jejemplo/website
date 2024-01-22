@@ -9,7 +9,7 @@
 </style>
 <script src="js/validation.js"></script>
 <script>
-let loc = document.getElementById("test");
+var loc = document.getElementById("test");
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -18,13 +18,11 @@ function getLocation() {
     loc.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-
 function showPosition(position) {
   pos = "Latitude: " + position.coords.latitude + "  Longitude: ";
   pos += position.coords.longitute;
   loc.innerHTML =  pos;
 }
-
 function showError(error) {
   switch(error.code) {
     case error.PERMISSION_DENIED:
@@ -41,8 +39,6 @@ function showError(error) {
       break;
   }
 }
-</script>
-<script>
 function init() {
   set_validation_buttons();
 }
