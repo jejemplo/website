@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lab 6-2</title>
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<style> 
+@import url(../css/default.css);
+</style>
+<script src="js/validation.js"></script>
+<script>
+let loc = document.getElementById("test");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else {
+    loc.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  pos = "Latitude: " + position.coords.latitude + "  Longitude: ";
+  pos += position.coords.longitute;
+  loc.innerHTML =  pos;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      loc.innerHTML = "User denied request for Geolocation.";
+      break;
+    case error.PERMISSION_UNAVAILABLE:
+      loc.innerHTML = "Location information is unavailable.";
+      break;
+    case error.TIMEOUT:
+      loc.innerHTML = "Request to get user location timed out.";
+      break;
+    case error.UNKNOWN_ERROR:
+      loc.innerHTML = "An unknown error occured.";
+      break;
+  }
+}
+</script>
+<script>
+function init() {
+  set_validation_buttons();
+}
+
+window.onload = init;
+</script>
+</head>
+
+<body>
+<h1>CIW Advanced HTML5 and CSS3: Lab 7-2</h1>
+
+<main>
+<h2>Using the Geolocation API to Obtain Geographical Information</h2>
+<p>
+Click on the button to get your location.
+</p>
+<button onclick="getLocation()">
+My Location
+</button>
+<p id="test"></p>
+</main>
+ 
+<footer>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> | 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer> 
+
+</body>
+</html>
