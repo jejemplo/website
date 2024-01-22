@@ -9,8 +9,6 @@
 </style>
 <script src="js/validation.js"></script>
 <script>
-var loc = document.getElementById("test");
-
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -40,6 +38,8 @@ function showError(error) {
   }
 }
 function init() {
+  var loc = document.getElementById("test");
+  console.log("loc is: " + loc);
   set_validation_buttons();
 }
 
